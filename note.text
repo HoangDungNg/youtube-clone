@@ -1,0 +1,2 @@
+for installing packages following the package.json file,
+run the following command: 'npm install --legacy-peer-deps'
