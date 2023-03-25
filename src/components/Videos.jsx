@@ -2,12 +2,13 @@ import React from 'react';
 import { Stack, Box } from '@mui/material';
 import { VideoCard, ChannelCard } from './';
 
-const Videos = ({ videos }) => {
+const Videos = ({ videos, direction }) => {
   //console.log(videos);
+  if (!videos?.length) return 'Loading...';
 
   return (
     <Stack
-      direction="row"
+      direction={{ xs: 'row', md: direction }}
       flexWrap="wrap"
       gap={2}
       sx={{ justifyContent: { xs: 'center', md: 'start' } }}
